@@ -1,4 +1,5 @@
 FROM jenkins/jenkins:alpine
+USER root
 
 # set version label
 LABEL maintainer="Nightah"
@@ -7,7 +8,7 @@ LABEL maintainer="Nightah"
 RUN \
 echo "**** install runtime packages ****" && \
 apk add --no-cache \
-	docker && \
+    docker && \
 echo "**** cleanup ****" && \
 rm -rf \
     /tmp/*
