@@ -12,3 +12,6 @@ apk add --no-cache \
 echo "**** cleanup ****" && \
 rm -rf \
     /tmp/*
+
+# set default user
+USER jenkins
